@@ -25,6 +25,7 @@ if __name__ == '__main__':
         sys.exit(0)
     
     input_dirname = sys.argv[1]
+
     result_f = os.path.join(result_folder,os.path.basename(input_dirname))
     
     if not os.path.isdir(result_f):
