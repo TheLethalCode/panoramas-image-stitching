@@ -1,5 +1,6 @@
 # panoramas-image-stitching
 
+Forked from [panoramas-image-stitching](https://github.com/SSARCandy/panoramas-image-stitching)
 
 ## Requirement
 
@@ -11,19 +12,23 @@ You will need to install some package using `pip3`:
 - numpy
 - matplotlib
 
+Install using `pip3 install -r requirements.txt`     
 
 ## Usage
 
+
+
 ```bash
+$ cd src
 $ python main.py <input img dir>
 
 # for example
-$ python ./main.py ../input_image/Xue-Mountain-Enterance/
+$ python ./main.py ../input_image/Synthetic/
 ```
 
 ## Input format
 
-The input dir should have:
+The input directory should have:
 
 - Some `.png` or `.jpg` images
 - A `image_list.txt`, file should contain:
@@ -34,28 +39,28 @@ This is an example for `image_list.txt`:
 
 ```
 # Filename   focal_length
-DSC_0184.jpg 830
-DSC_0185.jpg 830
-DSC_0186.jpg 830
-DSC_0187.jpg 830
-DSC_0171.jpg 830
-DSC_0172.jpg 830
-DSC_0173.jpg 830
-DSC_0174.jpg 830
-DSC_0175.jpg 830
-DSC_0176.jpg 830
-DSC_0177.jpg 830
-DSC_0178.jpg 830
-DSC_0179.jpg 830
-DSC_0180.jpg 830
-DSC_0182.jpg 830
-DSC_0183.jpg 830
+img184.jpg 1320
+img185.jpg 1320
+img186.jpg 1320
+img187.jpg 1320
+img171.jpg 1320
+img172.jpg 1320
+img173.jpg 1320
+img174.jpg 1320
+img175.jpg 1320
+img176.jpg 1320
+img177.jpg 1320
+img178.jpg 1320
+img179.jpg 1320
+img180.jpg 1320
+img182.jpg 1320
+img183.jpg 1320
 ```
 
 
 ## Output
 
-The program will output:
+The program will store the following images in the result directory:
 
 - Every stitched images, with filename `0.jpg`, `1.jpg`, `2.jpg`, ...
 - A aligned image `aligned.jpg`
@@ -67,5 +72,4 @@ The program have some constant parameters that can easily changed in `constant.p
 
 ## Environment
 
-I test my code in Window10/Linux/MacOS.  
-It should work fine in these system.
+Code tested in Windows/Linux/MacOS
